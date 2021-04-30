@@ -1,0 +1,25 @@
+.container-child {
+  border: solid black;
+  border-radius: 5px;
+  min-height: 230px;
+  width: 600px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+}
+.autor {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
