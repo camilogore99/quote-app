@@ -1,5 +1,4 @@
 body {
-  background-color: tomato;
   color: black;
 }
 .container {
@@ -10,7 +9,7 @@ body {
 }
 .button {
   border-radius: 8px;
-  background-color: black;
-  color: white;
+  color: black;
   padding: 8px;
+  background-color: #001510;
 }
