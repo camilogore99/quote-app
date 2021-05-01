@@ -7,8 +7,8 @@ import Autor from './autor'
 import ButtonTwittter from './button-twittter'
 import ButtonQuote from './button-quote'
 
-// hola
 const Container = () => {
+   console.log('hola mundo');
 
    const [ quoteJson, setQuoteJson ] = useState(0)
    const [color, setColor] = useState(colorAlea())
