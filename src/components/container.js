@@ -1,15 +1,13 @@
 import { useState }from 'react'
+import { colorAlea } from '../color-alea' 
 import quote from '../quotes.json'
-import { colorAlea } from '../color-alea'
-import '../container.css'
 import Quote from './quote'
 import Autor from './autor'
 import ButtonTwittter from './button-twittter'
 import ButtonQuote from './button-quote'
+import '../container.css'
 
 const Container = () => {
-   console.log('hola mundo');
-
    const [ quoteJson, setQuoteJson ] = useState(0)
    const [color, setColor] = useState(colorAlea())
 
@@ -22,14 +20,13 @@ const Container = () => {
    const getRandomInt = (min, max) => {
       return Math.floor(Math.random() * (max - min)) + min;
    }
-
    return (
       <div className="container-child">
          <div className="title" >
-            <Quote quoteJson={ quote.quotes[quoteJson].quote } />
+            <Quote quoteJson={ quote.quotes[ quoteJson ].quote } />
          </div>
          <div className="autor">
-            <Autor quoteJson={ quote.quotes[quoteJson].author } />
+            <Autor quoteJson={ quote.quotes[ quoteJson ].author } />
          </div>
          <div className="container-buttons">
             <ButtonTwittter color={color} />
@@ -37,6 +34,6 @@ const Container = () => {
          </div>
       </div>
    )
-}
+};
 
 export default Container;
